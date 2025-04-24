@@ -20,11 +20,11 @@ dependencies = [
     "click",
     "datasets",
     "ema_pytorch>=0.5.2",
+    "fsspec==2025.3.2",  # Versión específica para resolver conflicto con gcsfs
     "gradio>=3.45.2",
     "jieba",
     "librosa",
-    "matplotlib",
-    "numpy<=1.26.4",
+    "numpy>=2.0.0,<3.0.0",  # Modificado para compatibilidad con thinc
     "pydub",
     "pypinyin",
     "safetensors",
